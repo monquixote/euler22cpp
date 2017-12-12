@@ -109,7 +109,7 @@ HandValue evaluate_hand(const Hand &h){
     return HandValue{high,runs[1].back(),-1};
 }
 
-string handvalue2string(HandValue h){
+string handvalue2string(const HandValue &h){
     auto [hand, major, minor] = h;
     return hand_precidence2string(hand) + " " + ordinal2card_val(major) + (minor == -1 ? "" : " " + ordinal2card_val(minor));
 }
