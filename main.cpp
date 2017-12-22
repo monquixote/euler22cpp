@@ -186,6 +186,6 @@ int main() {
     }
     cout << "Left won " << i << endl;
     c = clock() - c;
-    printf ("It took me %d clicks (%f seconds).\n",c,((float)c)/CLOCKS_PER_SEC);
+    printf ("It took me %lu clicks (%f seconds).\n",c,((float)c)/CLOCKS_PER_SEC);
     return 0;
 }
